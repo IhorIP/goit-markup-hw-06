@@ -200,8 +200,8 @@
 }
 
 .checkbox-label {
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     width: 100%;
     display: block;
     font-weight: 400;
