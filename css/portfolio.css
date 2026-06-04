@@ -18,7 +18,7 @@
 }
 
 .portfolio-list-item {
-    width: 360px;
+    max-width: 360px;
 }
 
 .portfolio-link {
