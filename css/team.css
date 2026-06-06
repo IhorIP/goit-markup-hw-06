@@ -1,6 +1,5 @@
 .section-team {
     background-color: #f4f4fd;
-    padding: 120px 0;
 }
 
 .team-title {
@@ -13,7 +12,10 @@
 
 .team-list {
     display: flex;
-    gap: 24px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
 }
 
 .team-item {
@@ -80,4 +82,18 @@
 
 .social-icon {
     fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
 }

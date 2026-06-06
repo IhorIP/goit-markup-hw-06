@@ -1,5 +1,5 @@
 .section-pillars {
-    padding: 120px 0;
+    width: 100%;
 }
 
 .pillars-list {
@@ -46,10 +46,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
     .pillars-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -70,11 +66,6 @@
 }
 
 @media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding: 120px 15px;
-    }
-
     .pillars-wrapper {
         display: flex;
     }
