@@ -499,7 +499,7 @@
 
   <!-- #region modal -->
 
-  <div id="modal" class="backdrop is-open">
+  <div id="modal" class="backdrop">
     <div class="modal">
 
       <button class="close-popup" type="button">
@@ -547,7 +547,6 @@
             </div>
           </div>
 
-
           <div class="modal-text-checkbox">
             <input type="checkbox" id="form-checkbox" name="form-checkbox" value="true" class="native-checkbox sr-only">
             <label for="form-checkbox" class="checkbox-label">
@@ -575,8 +574,82 @@
 
     </div>
   </div>
-
   <!-- #endregion modal -->
+
+  <!-- #region mobile-menu -->
+  <div id="mobile-menu" class="mobile-menu">
+
+    <button class="mobile-menu-close-menu-btn" type="button">
+      <svg class="close-menu-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-button-close"></use>
+      </svg>
+    </button>
+
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-nav-item">
+          <a href="./index.html" class="mobile-menu-nav-link">Studio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#portfolio" class="mobile-menu-nav-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#team" class="mobile-menu-nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu-contacts">
+      <address>
+        <ul class="mobile-menu-contacts-list">
+          <li class="mobile-menu-contacts-item">
+            <a class="mobile-menu-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-menu-contacts-item">
+            <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="mobile-menu-social-list">
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Link to Instagram">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Link to Twitter">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Link to Facebook">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Link to Linkedin">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- #endregion mobile-menu -->
+
 </body>
 
 </html>
