@@ -214,34 +214,35 @@
     }
 
     .page-footer .container {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
         padding: 0 15px;
         flex-wrap: nowrap;
-        row-gap: 0;
-        column-gap: 0;
+        gap: 0;
+        margin-left: auto;
     }
 
     .footer-information {
         max-width: 264px;
-        margin-right: 120px;
     }
 
     .footer-social {
         max-width: 208px;
-        /* margin-right: 83px; */
+        margin-left: 120px;
     }
 
     .footer-form {
         display: flex;
         align-items: baseline;
-        margin-right: auto;
+        margin-left: 83px;
+    }
+
+    .footer-form-wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 24px;
     }
 
     .footer-form-label {
-        max-width: 264px;
+        width: 264px;
     }
 }

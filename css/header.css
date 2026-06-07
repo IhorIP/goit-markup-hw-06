@@ -1,14 +1,16 @@
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  /* border-bottom: 1px solid #e7e9fc;
   box-shadow:
     0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    0 2px 1px 0 rgba(46, 47, 66, 0.08); */
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  padding: 16px;
 }
 
 .page-nav {
@@ -20,16 +22,16 @@
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16667;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 40px;
 }
@@ -71,6 +73,7 @@
 .contacts {
   font-style: normal;
   margin-left: auto;
+  display: none;
 }
 
 .contacts-list {
@@ -96,4 +99,80 @@
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
+}
+
+.button-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 0 16px;
+  }
+
+  .page-header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow:
+      0 1px 6px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  }
+
+  .page-nav {
+    gap: 120px;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .contacts {
+    display: flex;
+  }
+
+  .contacts-list {
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 12px;
+  }
+
+  .contacts-item {
+    row-gap: 12px;
+  }
+
+  .contacts-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    padding: 0;
+  }
+
+  .button-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .page-nav {
+    gap: 76px;
+  }
+
+  .contacts-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    height: 100%;
+  }
 }
