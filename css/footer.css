@@ -12,9 +12,8 @@
 
 }
 
-*/ .footer-information {
+.footer-information {
     max-width: 264px;
-    margin-right: 120px;
 }
 
 .footer-logo {
@@ -222,17 +221,17 @@
 
     .footer-information {
         max-width: 264px;
+        margin-right: 120px
     }
 
     .footer-social {
         max-width: 208px;
-        margin-left: 120px;
+        margin-right: 83px;
     }
 
     .footer-form {
         display: flex;
         align-items: baseline;
-        margin-left: 83px;
     }
 
     .footer-form-wrapper {
